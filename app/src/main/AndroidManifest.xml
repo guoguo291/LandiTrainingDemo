@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.landi.trainingdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="true"
+       >
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.DatabaseMenuActivity" />
+        <activity android:name=".activitys.SharedMenuActivity" />
+        <activity
+            android:name=".activitys.FileMenuActivity"
+            android:label="@string/file_operation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activitys.LitePalMenuActivity"
+            android:label="LitePal" />
+        <activity
+            android:name=".activitys.RuntimePermissionActivity"
+            android:process=":remote.runtimePermission" />
+        <activity android:name=".activitys.ContentProviderMenuActivity" />
+        <activity android:name=".activitys.ContactsInfoActivity" />
+
+        <provider
+            android:name=".provider.MyDatabaseProvider"
+            android:authorities="com.landi.trainingdemo.provider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activitys.PersonInfoActivity" />
+        <activity android:name=".activitys.BaseActivity"></activity>
+        <service android:name=".service.LongRunningService"/>
+    </application>
+
+</manifest>

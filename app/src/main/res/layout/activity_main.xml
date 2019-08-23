@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.landi.trainingdemo.MainActivity">
+    <Button
+        android:id="@+id/id_btn_parse_json"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/parse_json"/>
+
+    <Button
+        android:id="@+id/id_btn_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/file_operation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/id_btn_sharedpre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/sharedPreferences_operation"
+        app:layout_constraintStart_toStartOf="@+id/id_btn_database"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_database" />
+
+    <Button
+        android:id="@+id/id_btn_database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/database_operation"
+        app:layout_constraintStart_toStartOf="@+id/id_btn_file"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_file" />
+    <Button
+        android:id="@+id/id_btn_litepal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/database_litepal"
+        app:layout_constraintStart_toStartOf="@+id/id_btn_sharedpre"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_sharedpre" />
+    <Button
+        android:id="@+id/id_btn_contentProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/contentProvider"
+        app:layout_constraintStart_toStartOf="@+id/id_btn_litepal"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_litepal" />
+    <Button
+    android:id="@+id/id_btn_runtime_permission"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="@string/runtime_permission"
+    app:layout_constraintStart_toStartOf="@+id/id_btn_contentProvider"
+    app:layout_constraintTop_toBottomOf="@+id/id_btn_contentProvider" />
+    <Button
+        android:id="@+id/id_btn_transfer_object"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/transfer_object"
+        app:layout_constraintStart_toStartOf="@+id/id_btn_runtime_permission"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_runtime_permission" />
+
+    <Button
+        android:id="@+id/id_btn_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/open_alarm"
+        app:layout_constraintBottom_toBottomOf="@+id/id_btn_file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_btn_file"
+        app:layout_constraintTop_toTopOf="@+id/id_btn_file" />
+
+    <Button
+        android:id="@+id/id_lambda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/lambda"
+        app:layout_constraintStart_toStartOf="@+id/id_btn_alarm"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_alarm" />
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

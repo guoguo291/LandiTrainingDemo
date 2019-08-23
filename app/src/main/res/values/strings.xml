@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TrainingDemo</string>
+    <string name="parse_json">解析json数据</string>
+    <string name="file_operation">文件存储</string>
+    <string name="sharedPreferences_operation">SharedPreferences</string>
+    <string name="database_operation">数据库操作</string>
+    <string name="database_litepal">LitePal</string>
+    <string name="hint_fileinfo">输入保存的数据</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_getInfo">读取信息</string>
+    <string name="create_db">创建数据库</string>
+    <string name="update_db">升级数据库</string>
+    <string name="db_insert">添加数据</string>
+    <string name="db_update">修改数据</string>
+    <string name="db_delete">删除数据</string>
+    <string name="db_query">查找数据</string>
+    <string name="contentProvider">内容提供者</string>
+    <string name="runtime_permission">运行时权限</string>
+    <string name="call_phone">打电话</string>
+    <string name="get_contacts">获取联系人</string>
+    <string name="receive_info">没有收到信息</string>
+    <string name="transfer_object">传输对象数据</string>
+    <string name="open_alarm">开启定时任务</string>
+    <string name="lambda">lambda表达式</string>
+</resources>
