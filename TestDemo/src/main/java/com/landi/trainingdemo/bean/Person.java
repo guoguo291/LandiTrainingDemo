@@ -4,6 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
+ * 远程服务传输自定义对象数据，包名必须要和服务端对象类的包名一致
  * Created by guoj on 2019/8/16.
  */
 
@@ -58,6 +59,7 @@ public class Person implements Parcelable {
         dest.writeString(name);
         dest.writeInt(age);
     }
+
     @Override
     public String toString() {
         return "name:"+this.name+" age:"+this.age;

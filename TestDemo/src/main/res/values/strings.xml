@@ -4,4 +4,5 @@
     <string name="db_update">修改数据</string>
     <string name="db_delete">删除数据</string>
     <string name="db_query">查找数据</string>
+    <string name="calc_by_service">远程服务计算</string>
 </resources>

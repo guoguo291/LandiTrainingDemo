@@ -10,7 +10,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    compileOptions{
+    compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
@@ -25,6 +25,7 @@ android {
         exclude 'META-INF/DEPENDENCIES'
     }
     useLibrary 'org.apache.http.legacy'
+    sourceSets { main { aidl.srcDirs = ['src/main/aidl', 'src/main/aidl/iaidl'] } }
 }
 
 dependencies {

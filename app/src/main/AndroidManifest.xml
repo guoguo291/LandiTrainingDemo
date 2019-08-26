@@ -49,6 +49,13 @@
         <activity android:name=".activitys.PersonInfoActivity" />
         <activity android:name=".activitys.BaseActivity"></activity>
         <service android:name=".service.LongRunningService"/>
+        <service android:name=".service.RemoteService"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.IcalcAidlInterface"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
